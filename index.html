@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Admin Dashboard</title>
 </head>
 
@@ -13,103 +15,204 @@
     <div class="container">
         <div class="header">
             <div class="header-top">
-                <div class="search-bar"><input type="Search"></div>
-                <ul>
-                    <li></li>
-                    <li></li>
+                <div class="search-bar">
+                    <span class="material-icons">search</span>
+                    <input type="Search" class="search">
+                </div>
+                <ul class="header-top-ul">
+                    <li><span class="material-icons">notifications_active</span></li>
+                    <li><img src="/assets/blank-profile-picture-973460_1280.png" alt="" class="pfp"></li>
                     <li>Morgan Oakley</li>
                 </ul>
             </div>
 
             <div class="header-bottom">
                 <div class="bottom-left">
-                    <p>Hi There,</p>
-                    <h2>Morgan Oakley(@morgan)</h2>
+                    <img src="/assets/blank-profile-picture-973460_1280.png" class='pfp' alt="">
+                    <div class="header-bottom-text">
+                        <p>Hi There,</p>
+                        <h2>Morgan Oakley(@morgan)</h2>
+                    </div>
                 </div>
 
-                <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+                <ul class="header-ul">
+                    <li><a href="">New</a></li>
+                    <li><a href="">Upload</a></li>
+                    <li><a href="">Share</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="sidebar">
-            <h2>Dashboard</h2>
-
-            <div class="ul-1">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </div>
-            <div class="ul-2">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="side-container">
+                <div class="dash">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" />
+                    </svg>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="div-ul-1">
+                    <ul class="ul-1">
+                        <li><a href=""><span class="material-icons">home</span> Home</a></li>
+                        <li><a href=""><span class="material-icons">person</span> Profile</a></li>
+                        <li><a href=""><span class="material-icons">mode_comment</span> Messages</a></li>
+                        <li><a href=""><span class="material-icons">history</span> History</a></li>
+                        <li><a href=""><span class="material-icons">task</span> Tasks</a></li>
+                        <li><a href=""><span class="material-icons">forum</span> Communities</a></li>
+                    </ul>
+                </div>
+                <div class="div-ul-2">
+                    <ul class="ul-2">
+                        <li><a href=""><span class="material-icons">settings</span> Settings</a></li>
+                        <li><a href=""><span class="material-icons">help_center</span> Support</a></li>
+                        <li><a href=""><span class="material-icons">verified_user</span> Privacy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="main">
-            <h2>Your Projects</h2>
+            <h2 class="main-top-text">Your Projects</h2>
 
             <div class="cards">
                 <div class="card">
-                    <h3>Super Cool Project</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Super Cool Project</h3>
+                            <p class="card-p">Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Impossible Project</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Impossible Project</h3>
+                            <p class="card-p">Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Ad Blocker</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Ad Blocker</h3>
+                            <p class="card-p">Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Less Cool Project</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Less Cool Project</h3>
+                            <p class="card-p">Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Easy Peasy App</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Easy Peasy App</h3>
+                            <p class="card-p">Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <h3>Money Makers</h3>
-                    <p>Sad tempus lorem ipsum dolar</p>
-                    <div class="svgs"></div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3 class="card-h3">Money Makers</h3>
+                            <p>Sad tempus lorem ipsum dolar</p>
+                        </div>
+                        <div class="bottom-icon">
+                            <a href=""><span class="material-icons">star_purple500</span></a>
+                            <a href=""><span class="material-icons">favorite_border</span></a>
+                            <a href=""><span class="material-icons">share</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="main-right">
-                <h2>Announcements</h2>
+            <h2 class="h2-announ main-top-text">Announcements</h2>
+            <div class="announcements">
                 <div class="announcement">
                     <h4>Site Maintenance</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p class="announ-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
                 <div class="announcement">
-                    <h4>Site Maintenance</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h4>Community Share Day</h4>
+                    <p class="announ-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
                 <div class="announcement">
-                    <h4>Site Maintenance</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h4>Updated Privacy Policy</h4>
+                    <p class="announ-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>Molestias mollitia
+                        vel fugit eligendi. Dolor sequi nisi <br>culpa sed cum molestias iste repellendus</p>
                 </div>
+            </div>
 
-                <div class="trending">
-
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="trending-inner">
+                    <ul>
+                        <li>
+                            <div class="img-p">
+                                <img src="/assets/blank-profile-picture-973460_1280.png" alt="" class="pfp">
+                                <div class="inner-trending-text">
+                                    <h4>@tegan</h4>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-p">
+                                <img src="/assets/blank-profile-picture-973460_1280.png" alt="" class="pfp">
+                                <div class="inner-trending-text">
+                                    <h4>@morgan</h4>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-p">
+                                <img src="/assets/blank-profile-picture-973460_1280.png" alt="" class="pfp">
+                                <div class="inner-trending-text">
+                                    <h4>@kendall</h4>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-p">
+                                <img src="/assets/blank-profile-picture-973460_1280.png" alt="" class="pfp">
+                                <div class="inner-trending-text">
+                                    <h4>@alex</h4>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
